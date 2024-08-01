@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #prediction{
+      background-color:beige;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    body{
+        text-align: center;
+        background-color: blanchedalmond;
+    }
+        
+    </style>
+</head>
+<body>
+
+    <h1> Prediction Machine using Tensorflow</h1>
+    <div id="prediction">
+    <i><h1> Welcome to Prediction Machine   </h1></i>
+    <p> Please select an image and upload here for prediction </p>
+
+    <form action="/imageupload/imageprocess" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <input id="image" type="file" name="image"/>
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>

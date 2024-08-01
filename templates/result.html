@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>predicting_machine</title>
+    <style>
+   #pred{
+    background-color:beige;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+   }
+   body{
+    background-color: blanchedalmond;
+   }
+   #result{
+    background-color: aquamarine;
+   }
+    </style>
+</head>
+<body>
+    <div id="pred">
+    <h2> Here is the Prediction of the image, consider the first result as we are predicting the top three result.  </h2>
+    <u><h1> Predictions </h1></u>
+  
+<div id="result">
+{% for r,p in res %}
+    {{r}} {{p}} % </br>
+{% endfor %}  
+</div> 
+
+</div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
